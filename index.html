@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Base</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2 class="form-heading">Register with us</h2>
+      <form id="form" class="form">
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" />
+          <small id="error-username"
+            >Username must be atleast 4 characters long</small
+          >
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="mail" />
+          <small id="error-email">Email must contain "@" symbol</small>
+        </div>
+        <div class="form-control">
+          <label for="pass">Password</label>
+          <input type="password" id="pass" />
+          <small id="error-password">Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="passwords">Confirm Password</label>
+          <input type="password" id="passwords" />
+          <small id="error-confirm">Your password doesn't match</small>
+        </div>
+
+        <button>Submit</button>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
